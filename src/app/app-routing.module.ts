@@ -9,28 +9,28 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadComponent: () => import('./modules/landing/landing.component').then((x) => x.LandingComponent),
+    loadComponent: () => import('./standalones/landing/landing.component').then((x) => x.LandingComponent),
   },
   {
     path: 'contact',
-    loadComponent: () => import('./modules/contact/contact.component').then((x) => x.ContactComponent),
+    loadComponent: () => import('./standalones/contact/contact.component').then((x) => x.ContactComponent),
 
   }, 
   {
     path: 'note',
-    loadComponent: () => import('./modules/notes/notes.component').then((x) => x.NotesComponent),
+    loadComponent: () => import('./standalones/notes/notes.component').then((x) => x.NotesComponent),
   },
   {
     path: 'about',
-    loadComponent: () => import('./modules/about/about.component').then((x) => x.AboutComponent),
+    loadComponent: () => import('./standalones/about/about.component').then((x) => x.AboutComponent),
   },
   {
     path: 'admin',
-    loadComponent: () => import('./modules/amdin/amdin-login.component').then((x) => x.AmdinLoginComponent),
+    loadComponent: () => import('./standalones/amdin/amdin-login.component').then((x) => x.AmdinLoginComponent),
   },
   {
     path: 'admin/home',
-    loadComponent: () => import('./modules/amdin/components/admin-home/admin-home.component').then((x) => x.AdminHomeComponent),
+    loadComponent: () => import('./standalones/amdin/components/admin-home/admin-home.component').then((x) => x.AdminHomeComponent),
   }, 
 ];
 
