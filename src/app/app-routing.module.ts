@@ -14,7 +14,6 @@ const routes: Routes = [
   {
     path: 'contact',
     loadComponent: () => import('./standalones/contact/contact.component').then((x) => x.ContactComponent),
-
   }, 
   {
     path: 'note',
