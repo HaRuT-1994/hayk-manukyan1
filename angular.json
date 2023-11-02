@@ -58,6 +58,9 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "github-pages": {
+              "baseHref": "/hayk-manukyan1/"
             }
           },
           "defaultConfiguration": "production"
@@ -107,6 +110,9 @@
               "src/**/*.html"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
