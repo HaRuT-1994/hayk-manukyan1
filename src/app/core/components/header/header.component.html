@@ -1,0 +1,30 @@
+<header class="flex justify-between items-center p-8 h-14 bg-header">  
+  <img src="assets/img/logo.jpg" alt="logo" width="80px" height="80px">
+  <nav class="h-7">
+    <div class="container">
+      <a class="link" routerLink="home">{{'HEADER.HOME' | translate}}</a>
+      <a class="link" routerLink="about">{{'HEADER.ABOUT' | translate}}</a>
+      <a class="link" routerLink="note">{{'HEADER.NOTE' | translate}}</a>
+      <a class="link" routerLink="contact">{{'HEADER.CONTACT' | translate}}</a>
+    </div>
+  </nav>
+  <div class="flex">
+    <div  class="flex">
+      <a href="#">
+        <img src="assets/img/icons/icons8-facebook-48.webp" alt="facebook icon">
+      </a>
+      <a href="#">
+        <img src="assets/img/icons/icons8-instagram-48.webp" alt="instagram icon">
+      </a>
+      <a href="#">
+        <img src="assets/img/icons/icons8-youtube-48.webp" alt="youtube icon">
+      </a>
+    </div>
+    <select (change)="onSelect($event.target)">
+      <option value="en">En</option>
+      <option value="hy">Hy</option>
+    </select>
+    
+  </div>
+</header>
+  

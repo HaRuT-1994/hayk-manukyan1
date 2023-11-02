@@ -1,0 +1,26 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // Three columns with equal width
+  grid-gap: 20px; // Gap between blocks
+  
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); // Two columns for smaller screens
+  }
+  
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr; // Single column for mobile screens
+  }
+}
+
+.block {
+  background-color: #ccc;
+  text-align: center;
+  cursor: pointer;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    padding: 8px;
+    width: 200px;
+  }
+}
