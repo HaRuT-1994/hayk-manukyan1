@@ -8,10 +8,19 @@ import { TranslateService } from '@ngx-translate/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent {
+  isCollapsed = true;
 
-  constructor(private tr: TranslateService) {}
+  menuItems = [
+    {label: 'HEADER.HOME', path: 'home', type: 'home'},
+    {label: 'HEADER.ABOUT', path: 'about', type: 'man'},
+    {label: 'HEADER.NOTE', path: 'note', type: 'book'},
+    {label: 'HEADER.CONTACT', path: 'contact', type: 'contacts'}
+  ]
 
-  onSelect (ev:any) {
-    this.tr.use(ev.value);
+  toggleCollapsed(): void {
+    this.isCollapsed = !this.isCollapsed;
   }
+
+  constructor(public tr: TranslateService) {}
+
 }

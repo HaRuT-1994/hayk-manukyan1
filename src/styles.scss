@@ -4,7 +4,22 @@
 @tailwind utilities;
 
 @import 'src/assets/styles/links.scss';
+// @import 'src/assets/styles/links.scss';
 
 .validation-error {
   color: $danger;
+}
+
+.mobile-hidden {
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+
+  
+}
+
+.desktop-hidden {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
