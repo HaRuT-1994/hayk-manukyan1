@@ -1,5 +1,8 @@
+@import 'src/assets/styles/variables.scss';
+
 :host {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: $bg-main;
 }

@@ -12,10 +12,10 @@ export class FooterComponent {
   public currentYear: number = new Date().getFullYear();
   public emailAddress = 'hayk@gmail.com';
   public phoneNumber = '+8764872634786';
-  public socialLinks = {
-    facebook: 'https://www.facebook.com/your-singer',
-    twitter: 'https://www.twitter.com/your-singer',
-    instagram: 'https://www.instagram.com/your-singer',
-    youtube: 'https://www.youtube.com/your-singer'
-  };
+  public socialLinks = [
+    {url: 'https://www.facebook.com/your-singer', socialName: 'facebook'},
+    {url: 'https://www.twitter.com/your-singer', socialName: 'twitter'},
+    {url: 'https://www.instagram.com/your-singer', socialName: 'instagram'},
+    {url: 'https://www.youtube.com/your-singer', socialName: 'youtube'}
+  ]
 }

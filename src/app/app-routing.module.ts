@@ -24,6 +24,10 @@ const routes: Routes = [
     loadComponent: () => import('./standalones/about/about.component').then((x) => x.AboutComponent),
   },
   {
+    path: 'video/:id',
+    loadComponent: () => import('./standalones/show-video/show-video.component').then((x) => x.ShowVideoComponent),
+  },
+  {
     path: 'admin',
     loadComponent: () => import('./standalones/amdin/amdin-login.component').then((x) => x.AmdinLoginComponent),
   },

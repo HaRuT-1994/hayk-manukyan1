@@ -1,29 +1,14 @@
 <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-left">
+    <div class="footer-content flex">
+      <div class="flex flex-col justify-center align-center">
         <h4>{{ singerName }} &copy; {{ currentYear }}</h4>
         <p>{{ singerDescription }}</p>
       </div>
-      <div class="footer-right">
-        <ul class="social-icons">
-          <li>
-            <a href="{{ socialLinks.facebook }}" target="_blank">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="{{ socialLinks.twitter }}" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="{{ socialLinks.instagram }}" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="{{ socialLinks.youtube }}" target="_blank">
-              <i class="fab fa-youtube"></i>
+      <div class="footer-right flex flex-col">
+        <ul class="social-icons flex">
+          <li *ngFor="let social of socialLinks">
+            <a href="{{ social.url }}" target="_blank">
+              <i class="fab fa-{{social.socialName}}"></i>
             </a>
           </li>
         </ul>
